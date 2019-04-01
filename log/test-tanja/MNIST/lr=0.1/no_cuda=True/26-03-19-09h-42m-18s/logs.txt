@@ -1,0 +1,49 @@
+[2019-03-26 09:42:18] [    INFO] --- Setup logging. Log file: log/test-tanja/MNIST/lr=0.1/no_cuda=True/26-03-19-09h-42m-18s/logs.txt (setup.py:530)
+[2019-03-26 09:42:18] [    INFO] --- Arguments saved to: log/test-tanja/MNIST/lr=0.1/no_cuda=True/26-03-19-09h-42m-18s/args.txt (setup.py:533)
+[2019-03-26 09:42:18] [    INFO] --- Initialize Tensorboard SummaryWriter (setup.py:538)
+[2019-03-26 09:42:19] [ WARNING] --- Git status is ignored! (RunMe.py:205)
+[2019-03-26 09:42:19] [    INFO] --- Randomly chosen seed is: 741138431 (setup.py:615)
+[2019-03-26 09:42:19] [    INFO] --- Model CNN_basic expects input size of (32, 32) (image_classification.py:63)
+[2019-03-26 09:42:19] [    INFO] --- Loading MNIST from:toy_dataset/MNIST (setup.py:233)
+[2019-03-26 09:42:19] [ WARNING] --- Missing analytics.csv file for dataset located at toy_dataset/MNIST (setup.py:384)
+[2019-03-26 09:42:19] [ WARNING] --- Attempt creating analytics.csv file for dataset located at toy_dataset/MNIST (setup.py:386)
+[2019-03-26 09:42:20] [    INFO] --- Begin computing the mean (dataset_analytics.py:133)
+[2019-03-26 09:42:26] [    INFO] --- Finished computing the mean (dataset_analytics.py:142)
+[2019-03-26 09:42:26] [    INFO] --- Begin computing the std (dataset_analytics.py:143)
+[2019-03-26 09:42:29] [    INFO] --- Finished computing the std (dataset_analytics.py:150)
+[2019-03-26 09:42:29] [    INFO] --- Begin computing class frequencies weights (dataset_analytics.py:202)
+[2019-03-26 09:42:29] [    INFO] --- Finished computing class frequencies weights (dataset_analytics.py:219)
+[2019-03-26 09:42:29] [    INFO] --- Class frequencies (rounded): [100.] (dataset_analytics.py:221)
+[2019-03-26 09:42:29] [ WARNING] --- Created analytics.csv file for dataset located at toy_dataset/MNIST  (setup.py:388)
+[2019-03-26 09:42:29] [    INFO] --- Dataset loaded as images (setup.py:258)
+[2019-03-26 09:42:29] [    INFO] --- Verifying the dataset integrity - quick (dataset_integrity.py:182)
+[2019-03-26 09:42:29] [   ERROR] --- Missing footprint. Cannot verify dataset integrity. (dataset_integrity.py:197)
+[2019-03-26 09:42:29] [ WARNING] --- Creating a new footprint, since it is missing. (dataset_integrity.py:198)
+[2019-03-26 09:42:29] [    INFO] --- Generating the footprint of: toy_dataset/MNIST (dataset_integrity.py:54)
+[2019-03-26 09:43:05] [    INFO] --- Footprint generated successfully (dataset_integrity.py:57)
+[2019-03-26 09:43:07] [    INFO] --- Setting up model CNN_basic (setup.py:86)
+[2019-03-26 09:43:07] [    INFO] --- Loading weights for data balancing (setup.py:101)
+[2019-03-26 09:43:07] [    INFO] --- Begin training (image_classification.py:76)
+[2019-03-26 09:43:08] [   ERROR] --- Unhandled error: RuntimeError('weight tensor should be defined either for all 1 classes or no classes but got weight tensor of shape: [3] at /Users/soumith/minicondabuild3/conda-bld/pytorch_1518372155635/work/torch/lib/THNN/generic/ClassNLLCriterion.c:30',) (RunMe.py:261)
+[2019-03-26 09:43:08] [   ERROR] --- Traceback (most recent call last):
+  File "template/RunMe.py", line 254, in _execute
+    **args.__dict__)
+  File "/Users/Tanja/Documents/Uni/Master/pr/PR19_tandomeijivan/DeepDIVA/template/runner/image_classification/image_classification.py", line 80, in single_run
+    val_value[-1] = ImageClassification._validate(val_loader, model, criterion, writer, -1, **kwargs)
+  File "/Users/Tanja/Documents/Uni/Master/pr/PR19_tandomeijivan/DeepDIVA/template/runner/image_classification/image_classification.py", line 152, in _validate
+    return evaluate.validate(val_loader, model, criterion, writer, epoch, **kwargs)
+  File "/Users/Tanja/Documents/Uni/Master/pr/PR19_tandomeijivan/DeepDIVA/template/runner/image_classification/evaluate.py", line 20, in validate
+    return _evaluate(val_loader, model, criterion, writer, epoch, 'val', no_cuda, log_interval, **kwargs)
+  File "/Users/Tanja/Documents/Uni/Master/pr/PR19_tandomeijivan/DeepDIVA/template/runner/image_classification/evaluate.py", line 93, in _evaluate
+    loss = criterion(output, target_var)
+  File "/Users/Tanja/miniconda/envs/deepdiva/lib/python3.5/site-packages/torch/nn/modules/module.py", line 357, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/Users/Tanja/miniconda/envs/deepdiva/lib/python3.5/site-packages/torch/nn/modules/loss.py", line 679, in forward
+    self.ignore_index, self.reduce)
+  File "/Users/Tanja/miniconda/envs/deepdiva/lib/python3.5/site-packages/torch/nn/functional.py", line 1161, in cross_entropy
+    return nll_loss(log_softmax(input, 1), target, weight, size_average, ignore_index, reduce)
+  File "/Users/Tanja/miniconda/envs/deepdiva/lib/python3.5/site-packages/torch/nn/functional.py", line 1052, in nll_loss
+    return torch._C._nn.nll_loss(input, target, weight, size_average, ignore_index, reduce)
+RuntimeError: weight tensor should be defined either for all 1 classes or no classes but got weight tensor of shape: [3] at /Users/soumith/minicondabuild3/conda-bld/pytorch_1518372155635/work/torch/lib/THNN/generic/ClassNLLCriterion.c:30
+ (RunMe.py:262)
+[2019-03-26 09:43:08] [   ERROR] --- Execution finished with errors :( (RunMe.py:263)

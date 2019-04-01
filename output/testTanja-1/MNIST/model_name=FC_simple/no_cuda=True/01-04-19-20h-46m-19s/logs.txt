@@ -1,0 +1,6 @@
+[2019-04-01 20:46:19] [    INFO] --- Setup logging. Log file: ./output/testTanja-1/MNIST/model_name=FC_simple/no_cuda=True/01-04-19-20h-46m-19s/logs.txt (setup.py:530)
+[2019-04-01 20:46:19] [    INFO] --- Arguments saved to: ./output/testTanja-1/MNIST/model_name=FC_simple/no_cuda=True/01-04-19-20h-46m-19s/args.txt (setup.py:533)
+[2019-04-01 20:46:19] [    INFO] --- Initialize Tensorboard SummaryWriter (setup.py:538)
+[2019-04-01 20:46:19] [ WARNING] --- Git status is ignored! (RunMe.py:205)
+[2019-04-01 20:46:19] [    INFO] --- Randomly chosen seed is: 4139442980 (setup.py:615)
+[2019-04-01 20:46:19] [   ERROR] --- Model FC_simple expected input size is not a tuple. Received: 2 (image_classification.py:137)

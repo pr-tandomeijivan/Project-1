@@ -1,0 +1,8 @@
+[2019-03-26 09:33:36] [    INFO] --- Setup logging. Log file: log/test-tanja/MNIST/lr=0.1/no_cuda=True/26-03-19-09h-33m-36s/logs.txt (setup.py:530)
+[2019-03-26 09:33:36] [    INFO] --- Arguments saved to: log/test-tanja/MNIST/lr=0.1/no_cuda=True/26-03-19-09h-33m-36s/args.txt (setup.py:533)
+[2019-03-26 09:33:36] [    INFO] --- Initialize Tensorboard SummaryWriter (setup.py:538)
+[2019-03-26 09:33:36] [ WARNING] --- Git status is ignored! (RunMe.py:205)
+[2019-03-26 09:33:36] [    INFO] --- Randomly chosen seed is: 4016002934 (setup.py:615)
+[2019-03-26 09:33:36] [    INFO] --- Model CNN_basic expects input size of (32, 32) (image_classification.py:63)
+[2019-03-26 09:33:36] [    INFO] --- Loading MNIST from:toy_dataset/MNIST (setup.py:233)
+[2019-03-26 09:33:36] [   ERROR] --- Val folder not found in the dataset_folder=toy_dataset/MNIST (image_folder_dataset.py:85)

@@ -1,0 +1,8 @@
+[2019-04-01 20:46:49] [    INFO] --- Setup logging. Log file: ./output/testTanja-1/MNIST/no_cuda=True/01-04-19-20h-46m-49s/logs.txt (setup.py:530)
+[2019-04-01 20:46:49] [    INFO] --- Arguments saved to: ./output/testTanja-1/MNIST/no_cuda=True/01-04-19-20h-46m-49s/args.txt (setup.py:533)
+[2019-04-01 20:46:49] [    INFO] --- Initialize Tensorboard SummaryWriter (setup.py:538)
+[2019-04-01 20:46:49] [ WARNING] --- Git status is ignored! (RunMe.py:205)
+[2019-04-01 20:46:49] [    INFO] --- Randomly chosen seed is: 738974444 (setup.py:615)
+[2019-04-01 20:46:49] [    INFO] --- Model CNN_basic expects input size of (32, 32) (image_classification.py:63)
+[2019-04-01 20:46:49] [    INFO] --- Loading MNIST from:/dataset/MNIST (setup.py:233)
+[2019-04-01 20:46:49] [   ERROR] --- Train folder not found in the dataset_folder=/dataset/MNIST (image_folder_dataset.py:82)
