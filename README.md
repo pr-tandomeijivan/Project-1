@@ -3,7 +3,9 @@ Task 2a)
 
 
 Task 2b)
-• Apply MLP to the MNIST dataset• MLP with one hidden layer• Optimise parameters using cross-validation
+• Apply MLP to the MNIST dataset
+• MLP with one hidden layer
+• Optimise parameters using cross-validation
 
 0) Prepare:
 source activate deepdiva
@@ -12,13 +14,16 @@ source activate deepdiva
 python util/data/get_a_dataset.py --dataset mnist --output-folder datasets
 
 2) Train the FC_simple model (simple Fully Connected MLP):
-python template/RunMe.py --dataset-folder datasets/MNIST --no-cuda --ignoregit
+python template/RunMe.py --dataset-folder datasets/MNIST --no-cuda --ignoregit -model-name FC_simple
+--> to adapt: https://diva-dia.github.io/DeepDIVAweb/articles/customizing-experiments/
 
 3) see the Results:
 tensorboard --logdir output --port 9009
 
 4) Optimize the parameters:
-https://diva-dia.github.io/DeepDIVAweb/articles/customizing-experiments/
+https://diva-dia.github.io/DeepDIVAweb/articles/run-sigopt/
+
+5) See the results again and so on...
 
 
 -----------------------------------------------------------------------------------------------------------------
