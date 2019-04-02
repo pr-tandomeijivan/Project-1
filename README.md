@@ -14,7 +14,7 @@ source activate deepdiva
 python util/data/get_a_dataset.py --dataset mnist --output-folder datasets
 
 2) Train the FC_simple model (simple Fully Connected MLP):
-python template/RunMe.py --dataset-folder datasets/MNIST --no-cuda --ignoregit -model-name FC_simple
+python template/RunMe.py --dataset-folder datasets/MNIST --no-cuda --ignoregit --model-name FC_simple
 --> to adapt: https://diva-dia.github.io/DeepDIVAweb/articles/customizing-experiments/
 
 3) see the Results:
