@@ -1,110 +1,45 @@
-Task 2a)
+# Group Work Pattern Regocognition 2019
 
-
-
-Task 2b)
-• Apply MLP to the MNIST dataset
-• MLP with one hidden layer
-• Optimise parameters using cross-validation
-
-0) Prepare:
-source activate deepdiva
-
-1) Get the Dataset:
-python util/data/get_a_dataset.py --dataset mnist --output-folder datasets
-
-2) Train the FC_simple model (simple Fully Connected MLP):
-python template/RunMe.py --dataset-folder datasets/MNIST --no-cuda --ignoregit --model-name FC_simple
---> to adapt: https://diva-dia.github.io/DeepDIVAweb/articles/customizing-experiments/
-
-3) see the Results:
-tensorboard --logdir output --port 9009
-
-4) Optimize the parameters:
-https://diva-dia.github.io/DeepDIVAweb/articles/run-sigopt/
-
-5) See the results again and so on...
-
-
+## Group name: Tandomeijivan
+```
+Members:
+Tanja Küry
+Jiyoung Lee
+Dominik Seliner
+Ivan Kravchenko
+Mei Ling Wong
+```
 -----------------------------------------------------------------------------------------------------------------
 
-# DeepDIVA: A Highly-Functional Python Framework for Reproducible Experiments
+# Instructions:
 
-DeepDIVA is an infrastructure designed to enable quick and intuitive
-setup of reproducible experiments with a large range of useful analysis
-functionality.
-Reproducing scientific results can be a frustrating experience, not only
-in document image analysis but in machine learning in general.
-Using DeepDIVA a researcher can either reproduce a given experiment with
-a very limited amount of information or share their own experiments with
-others.
-Moreover, the framework offers a large range of functions, such as
-boilerplate code, keeping track of experiments, hyper-parameter
-optimization, and visualization of data and results.
-DeepDIVA is implemented in Python and uses the deep learning framework
-[PyTorch](http://pytorch.org/).
-It is completely open source and accessible as Web Service through
-[DIVAServices](http://divaservices.unifr.ch).
+## Task 2a)
+File Format: .ipynb
+Use Jupyter Notebook to run the SVM.
 
-## Additional resources
+## Task 2b)
 
-- [DeepDIVA Homepage](https://diva-dia.github.io/DeepDIVAweb/index.html)
-- [Tutorials](https://diva-dia.github.io/DeepDIVAweb/articles.html)
-- [Paper on arXiv](https://arxiv.org/abs/1805.00329) 
 
-## Getting started
-
-In order to get the framework up and running it is only necessary to clone the latest version of the repository:
-
-``` shell
-git clone https://github.com/DIVA-DIA/DeepDIVA.git
-```
-
-Run the script:
-
-``` shell
-bash setup_environment.sh
-```
-
-Reload your environment variables from `.bashrc` with: `source ~/.bashrc`
-
-## Verifying Everything Works
-
-To verify the correctness of the procecdure you can run a small experiment. Activate the DeepDIVA python environment:
-
+## Task 2c
+1) Prepare:
 ``` shell
 source activate deepdiva
 ```
 
-Download the MNIST dataset:
+2) Dataset:  
+Add the mnist folder provided on ilias (in mnist-png-format) to the dataset folder
 
+2) Run Model:
 ``` shell
-python util/data/get_a_dataset.py mnist --output-folder toy_dataset
+python template/RunMe.py --dataset-folder datasets/mnist --no-cuda --ignoregit --model-name PR_CNN
 ```
 
-Train a simple Convolutional Neural Network on the MNIST dataset using the command:
-
+3) Results on Tensorboard (Visualization): 
 ``` shell
-python template/RunMe.py --output-folder log --dataset-folder toy_dataset/MNIST --lr 0.1 --ignoregit --no-cuda
+tensorboard --logdir output --port 9009
 ```
 
-## Citing us
+(Other outputs with different learning rate and epoch values from us are also available in the output folder and the plots can be seen on the tensorboard)
 
-If you use our software, please cite our paper as (will be updated soon):
-
-``` latex
-@inproceedings{albertipondenkandath2018deepdiva,
-    archivePrefix = {arXiv},
-    arxivId = {1805.00329},
-    eprint = {1805.00329},
-    author = {Alberti, Michele and Pondenkandath, Vinaychandran and Würsch, Marcel and Ingold, Rolf and Liwicki, Marcus},
-    title = {{DeepDIVA: A Highly-Functional Python Framework for Reproducible Experiments}},
-    year = {2018},
-    month = {apr},
-}
-```
-
-## License
-
-Our work is on GNU Lesser General Public License v3.0
+## Task 2d
 
