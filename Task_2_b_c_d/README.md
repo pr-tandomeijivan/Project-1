@@ -1,6 +1,7 @@
 # Instructions:
 
-Add the mnist folder provided on ilias (in mnist-png-format) to the datasets folder
+Add the mnist folder provided on ilias (in mnist-png-format) to the datasets folder  
+In the provided dataset there is a "val" file in test folder which needs to be deleted or it will break the whole process.
 
 To run the different tasks just navigate to the Task_2_b_c_d folder and execute the following commands:
 ## Task 2b
