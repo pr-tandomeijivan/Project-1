@@ -14,8 +14,9 @@ Mei Ling Wong
 # Instructions:
 
 ## Task 2a and 2b) (Jupyter)
-File Format: .ipynb
+See Task_2_a_b  
+File Format: .ipynb  
 Use Jupyter Notebook to run it.
 
-## Task 2b,c,d (DeepDiva)
+## Task 2b, 2c, 2d (DeepDiva)
 See Task_2_b_c_d
