@@ -27,7 +27,7 @@ class FC_simple(nn.Module):
         Final classification fully connected layer
     """
 
-    def __init__(self, output_channels=5, **kwargs):
+    def __init__(self, output_channels=10, **kwargs):
         """
         Creates an FC_simple model from the scratch.
 
@@ -38,14 +38,14 @@ class FC_simple(nn.Module):
         """
         super(FC_simple, self).__init__()
 
-        self.expected_input_size = 2
+        self.expected_input_size = (28, 28)
 
         hidden = 20
 
         # First layer
         self.fc1 = nn.Sequential(
             Flatten(),
-            nn.Linear(self.expected_input_size, hidden),
+            nn.Linear(2, hidden),
             nn.Tanh(),
         )
 

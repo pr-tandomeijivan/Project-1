@@ -102,3 +102,16 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# IDE folders
+.idea/
+*.iml
+
+# Mac folder
+.DS_Store
+
+# Log folder
+.logs
+
+# datasets
+datasets/*/

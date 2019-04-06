@@ -1,22 +1,29 @@
 # Instructions:
 
+Add the mnist folder provided on ilias (in mnist-png-format) to the datasets folder
+
+To run the different tasks just navigate to the Task_2_b_c_d folder and execute the following commands:
+## Task 2b
+```
+./task_2_b.sh
+```
+the output can be found in the output/mlp folder
+
+Results on Tensorboard (Visualization): 
+```
+tensorboard --logdir output/mlp --port 9009
+```
+
+
 ## Task 2c
-1) Prepare:
-``` shell
-source activate deepdiva
 ```
-
-2) Dataset:  
-Add the mnist folder provided on ilias (in mnist-png-format) to the dataset folder
-
-2) Run Model:
-``` shell
-python template/RunMe.py --dataset-folder datasets/mnist --no-cuda --ignoregit --model-name PR_CNN
+./task_2_b.sh
 ```
+the output can be found in the output/cnn folder
 
-3) Results on Tensorboard (Visualization): 
-``` shell
-tensorboard --logdir output --port 9009
+Results on Tensorboard (Visualization): 
+```
+tensorboard --logdir output/cnn --port 9009
 ```
 
 (Other outputs with different learning rate and epoch values from us are also available in the output folder and the plots can be seen on the tensorboard)

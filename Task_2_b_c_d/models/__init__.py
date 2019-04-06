@@ -10,6 +10,7 @@ from ._VGG import vgg11, vgg11_bn, vgg13, vgg13_bn, vgg16, vgg16_bn, vgg19, vgg1
 from ._Inception_v3 import inception_v3
 from ._DenseNet import densenet121, densenet161, densenet169, densenet201
 from .model_task2c import PR_CNN
+from .model_task2b import MLP
 
 """
 Formula to compute the output size of a conv. layer

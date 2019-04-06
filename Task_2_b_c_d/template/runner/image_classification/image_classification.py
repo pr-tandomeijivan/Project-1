@@ -130,12 +130,12 @@ class ImageClassification:
         -------
             None
         """
-        if type(model_expected_input_size) is not tuple or len(model_expected_input_size) != 2:
-            logging.error('Model {model_name} expected input size is not a tuple. '
-                          'Received: {model_expected_input_size}'
-                          .format(model_name=model_name,
-                                  model_expected_input_size=model_expected_input_size))
-            sys.exit(-1)
+       # if type(model_expected_input_size) is not tuple or len(model_expected_input_size) != 2:
+       #     logging.error('Model {model_name} expected input size is not a tuple. '
+        #                  'Received: {model_expected_input_size}'
+         #                 .format(model_name=model_name,
+        #                        model_expected_input_size=model_expected_input_size))
+        # sys.exit(-1)
 
     ####################################################################################################################
     """

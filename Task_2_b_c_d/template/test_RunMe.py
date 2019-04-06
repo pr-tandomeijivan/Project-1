@@ -15,6 +15,7 @@ import numpy as np
 
 from template.RunMe import RunMe
 
+
 def test_one():
     """
     - Verify the sizes of the return of execute
