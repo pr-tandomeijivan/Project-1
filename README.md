@@ -18,7 +18,7 @@ File Format: .ipynb
 Use Jupyter Notebook to run the SVM.
 
 ## Task 2b)
-
+See the jupyter notebook in the folder Task 2b/mlp
 
 ## Task 2c
 1) Prepare:
