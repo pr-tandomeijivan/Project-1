@@ -17,7 +17,7 @@ tensorboard --logdir output/mlp --port 9009
 
 ## Task 2c
 ```
-./task_2_b.sh
+./task_2_c.sh
 ```
 the output can be found in the output/cnn folder
 
