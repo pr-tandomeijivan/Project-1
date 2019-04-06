@@ -14,7 +14,7 @@ Mei Ling Wong
 # Instructions:
 
 ## Task 2a and 2b) (Jupyter)
-See Task_2_a_b  
+See Task_2_a_b_jupyter    
 File Format: .ipynb  
 Use Jupyter Notebook to run it.
 
