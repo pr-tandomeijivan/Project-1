@@ -114,4 +114,4 @@ venv.bak/
 .logs
 
 # datasets
-datasets/*/
+*/datasets/*/
