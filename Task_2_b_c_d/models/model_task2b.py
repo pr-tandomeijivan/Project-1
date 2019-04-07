@@ -32,7 +32,7 @@ class MLP(nn.Module):
 
     """
 
-    def __init__(self, **kwargs):
+    def __init__(self, hidden_nodes=50, **kwargs):
         """
         Creates an MLP model from the scratch.
 
@@ -47,8 +47,6 @@ class MLP(nn.Module):
 
         # Here you have to put the expected input size in terms of width and height of your input image
         self.expected_input_size = (28, 28)
-
-        hidden_nodes = 100
 
         self.fc_input = nn.Sequential(
             Flatten(),

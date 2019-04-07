@@ -9,6 +9,7 @@ import torch
 import models
 import sys
 
+
 def parse_arguments(args=None):
     """
     Argument Parser
@@ -227,6 +228,11 @@ def _optimizer_options(parser):
                                   type=float,
                                   default=0,
                                   help='weight_decay coefficient, also known as L2 regularization')
+    # Added for MLP model to be able to let the number of nodes be optimized
+    parser_optimizer.add_argument('--hidden-nodes',
+                                  type=int,
+                                  default=50,
+                                  help='number of nodes to use in the hidden layer of MLP model')
 
 
 def _system_options(parser):
