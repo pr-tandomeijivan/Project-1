@@ -29,6 +29,9 @@ tensorboard --logdir output/cnn --port 9009
 
 (Other outputs with different learning rate and epoch values from us are also available in the output folder and the plots can be seen on the tensorboard)
 
+## Task 2d
+See file 'ExpectedOutputTask2d'
+
 -----------------------------------------------------------------------------------------------------------------
 
 # DeepDIVA: A Highly-Functional Python Framework for Reproducible Experiments
