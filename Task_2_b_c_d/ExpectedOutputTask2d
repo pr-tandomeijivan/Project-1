@@ -1,0 +1,41 @@
+Accuracy on the permutated MNIST compared with the results on the normal MNIST.
+Analysis of the results in your own words.
+
+------------------------------------------------------------------------------------
+PR_CNN
+
+normal MNIST with best parameters (lr=0.1, epochs=5):
+    test  epoch[4]: Acc@1=98.020	Loss=0.0598
+another run with same settings:
+    test  epoch[4]: Acc@1=98.220	Loss=0.0597
+
+
+permutated MNIST with best parameters from normal MNIST (lr=0.1, epochs=5):
+    first run:   test  epoch[4]: Acc@1=92.520	Loss=0.2443
+    second run:  test  epoch[4]: Acc@1=96.420	Loss=0.1176
+    third run:   test  epoch[4]: Acc@1=96.330	Loss=0.1196
+
+permutated MNIST with best parameters after optimizing on the permutated dataset (lr=0.1, epochs=20):
+    test  epoch[19]: Acc@1=96.700	Loss=0.1154
+another run with same settings:
+    test  epoch[19]: Acc@1=96.780	Loss=0.1329
+
+
+Analysis of the results in our own words:
+
+Convolutions are "looking" for structural patterns (like a - or |)  in the data. In the non-permutated
+dataset we imagine this to be easier than in the permutated dataset, as the permutation destroys the
+structures and pixels that are normally close together are not close anymore. Obviously, it works quite
+well anyway, so somehow we think there must be some structures that can be found also in the permutated
+images.
+------------------------------------------------------------------------------------
+MLP
+
+normal MNIST with best parameters
+
+
+permutated MNIST with best parameters from normal MNIST
+
+
+Analysis of the results in our own words.
+
