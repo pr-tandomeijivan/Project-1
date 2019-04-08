@@ -20,22 +20,30 @@ permutated MNIST with best parameters after optimizing on the permutated dataset
 another run with same settings:
     test  epoch[19]: Acc@1=96.780	Loss=0.1329
 
+------------------------------------------------------------------------------------
 
-Analysis of the results in our own words:
+
+MLP
+
+normal MNIST with best parameters
+    test epoch[29]:    Acc@92.450  Loss=0.2734
+
+permutated MNIST with best parameters from normal MNIST
+    test  epoch[29]: Acc@1=92.310	Loss=0.2760
+
+
+------------------------------------------------------------------------------------
+
+Analysis of the results in our own words.
+
+There is a difference for the CNN:
 
 Convolutions are "looking" for structural patterns (like a - or |)  in the data. In the non-permutated
 dataset we imagine this to be easier than in the permutated dataset, as the permutation destroys the
 structures and pixels that are normally close together are not close anymore. Obviously, it works quite
 well anyway, so somehow we think there must be some structures that can be found also in the permutated
-images.
-------------------------------------------------------------------------------------
-MLP
+images, if it is not all due to the final fc layer that might have a huge impact.
 
-normal MNIST with best parameters
+For the FC the difference is very small, if existing at all:
 
-
-permutated MNIST with best parameters from normal MNIST
-
-
-Analysis of the results in our own words.
-
+It is basically just a fc layer, thus the structure of the pixels does not play a role.

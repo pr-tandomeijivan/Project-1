@@ -1,0 +1,37 @@
+[2019-04-08 22:21:08] [    INFO] --- Setup logging. Log file: ./output/cnnTransfer/test/no_cuda=True/08-04-19-22h-21m-08s/logs.txt (setup.py:530)
+[2019-04-08 22:21:08] [    INFO] --- Arguments saved to: ./output/cnnTransfer/test/no_cuda=True/08-04-19-22h-21m-08s/args.txt (setup.py:533)
+[2019-04-08 22:21:08] [    INFO] --- Initialize Tensorboard SummaryWriter (setup.py:538)
+[2019-04-08 22:21:08] [ WARNING] --- Git status is ignored! (RunMe.py:205)
+[2019-04-08 22:21:09] [    INFO] --- Randomly chosen seed is: 1032269394 (setup.py:615)
+[2019-04-08 22:21:09] [    INFO] --- Model CNN_basic expects input size of (32, 32) (apply_model.py:70)
+[2019-04-08 22:21:09] [    INFO] --- Loading test from:datasets/mnist_permutated/test (setup.py:61)
+[2019-04-08 22:21:09] [ WARNING] --- Missing analytics.csv file for dataset located at datasets/mnist_permutated/test (setup.py:384)
+[2019-04-08 22:21:09] [ WARNING] --- Attempt creating analytics.csv file for dataset located at datasets/mnist_permutated/test (setup.py:386)
+[2019-04-08 22:21:09] [ WARNING] --- Train folder not found in the args.dataset_folder=datasets/mnist_permutated/test (dataset_analytics.py:72)
+[2019-04-08 22:21:09] [ WARNING] --- Created analytics.csv file for dataset located at datasets/mnist_permutated/test  (setup.py:388)
+[2019-04-08 22:21:09] [   ERROR] --- analytics.csv not found in folder. Please copy the one generated in the training folder to this folder. (setup.py:70)
+[2019-04-08 22:21:09] [   ERROR] --- Currently normalizing with 0.5 for all channels for mean and std. (setup.py:72)
+[2019-04-08 22:21:09] [    INFO] --- Setting up model CNN_basic (setup.py:86)
+[2019-04-08 22:21:09] [   ERROR] --- Unhandled error: TypeError("torch.FloatTensor constructor received an invalid combination of arguments - got (NoneType, int), but expected one of:\n * no arguments\n * (int ...)\n      didn't match because some of the arguments have invalid types: (!NoneType!, !int!)\n * (torch.FloatTensor viewed_tensor)\n * (torch.Size size)\n * (torch.FloatStorage data)\n * (Sequence data)\n",) (RunMe.py:261)
+[2019-04-08 22:21:09] [   ERROR] --- Traceback (most recent call last):
+  File "/Users/Tanja/Documents/Uni/Master/pr/Project-1/Task_2_b_c_d/template/RunMe.py", line 254, in _execute
+    **args.__dict__)
+  File "/Users/Tanja/Documents/Uni/Master/pr/Project-1/Task_2_b_c_d/template/runner/apply_model/apply_model.py", line 83, in single_run
+    **kwargs)
+  File "/Users/Tanja/Documents/Uni/Master/pr/Project-1/Task_2_b_c_d/template/setup.py", line 89, in set_up_model
+    model = models.__dict__[model_name](output_channels=output_channels, pretrained=pretrained)
+  File "/Users/Tanja/Documents/Uni/Master/pr/Project-1/Task_2_b_c_d/models/CNN_basic.py", line 71, in __init__
+    nn.Linear(288, output_channels)
+  File "/Users/Tanja/miniconda/envs/deepdiva/lib/python3.5/site-packages/torch/nn/modules/linear.py", line 41, in __init__
+    self.weight = Parameter(torch.Tensor(out_features, in_features))
+TypeError: torch.FloatTensor constructor received an invalid combination of arguments - got (NoneType, int), but expected one of:
+ * no arguments
+ * (int ...)
+      didn't match because some of the arguments have invalid types: (!NoneType!, !int!)
+ * (torch.FloatTensor viewed_tensor)
+ * (torch.Size size)
+ * (torch.FloatStorage data)
+ * (Sequence data)
+
+ (RunMe.py:262)
+[2019-04-08 22:21:09] [   ERROR] --- Execution finished with errors :( (RunMe.py:263)

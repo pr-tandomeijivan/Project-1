@@ -1,0 +1,26 @@
+[2019-04-08 20:15:01] [    INFO] --- Setup logging. Log file: ./output/cnnTransfer/mnist_permutated/classify=True/no_cuda=True/08-04-19-20h-15m-01s/logs.txt (setup.py:530)
+[2019-04-08 20:15:01] [    INFO] --- Arguments saved to: ./output/cnnTransfer/mnist_permutated/classify=True/no_cuda=True/08-04-19-20h-15m-01s/args.txt (setup.py:533)
+[2019-04-08 20:15:01] [    INFO] --- Initialize Tensorboard SummaryWriter (setup.py:538)
+[2019-04-08 20:15:01] [ WARNING] --- Git status is ignored! (RunMe.py:205)
+[2019-04-08 20:15:01] [    INFO] --- Randomly chosen seed is: 1776655385 (setup.py:615)
+[2019-04-08 20:15:01] [    INFO] --- Model CNN_basic expects input size of (32, 32) (apply_model.py:70)
+[2019-04-08 20:15:01] [    INFO] --- Loading mnist_permutated from:datasets/mnist_permutated (setup.py:61)
+[2019-04-08 20:15:02] [    INFO] --- Setting up model CNN_basic (setup.py:86)
+[2019-04-08 20:15:02] [    INFO] --- Loading weights for data balancing (setup.py:101)
+[2019-04-08 20:15:02] [    INFO] --- Loading a saved model (setup.py:117)
+[2019-04-08 20:15:02] [ WARNING] --- While copying the parameter named conv1.0.weight, whose dimensions in the model are torch.Size([24, 3, 5, 5]) and whose dimensions in the checkpoint are torch.Size([24, 3, 7, 7]). (setup.py:121)
+[2019-04-08 20:15:02] [    INFO] --- Apply model to dataset (apply_model.py:85)
+[2019-04-08 20:15:25] [    INFO] --- Classification Report for epoch -1
+ (evaluate.py:101)
+[2019-04-08 20:15:25] [    INFO] --- 
+              precision    recall  f1-score   support
+
+           0       0.14      0.88      0.25     10000
+           1       0.57      0.00      0.01     40200
+           2       0.29      0.12      0.17     19800
+
+   micro avg       0.16      0.16      0.16     70000
+   macro avg       0.33      0.34      0.14     70000
+weighted avg       0.43      0.16      0.09     70000
+ (evaluate.py:104)
+[2019-04-08 20:15:25] [    INFO] --- Time taken for train/eval/test is: 0:00:24 (RunMe.py:257)
